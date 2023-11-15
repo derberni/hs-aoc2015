@@ -37,7 +37,7 @@ library:
   source-dirs: src
 
 executables:
-  hs-aoc2015-exe:
+  aoc2015:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
