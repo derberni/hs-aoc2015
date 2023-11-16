@@ -28,6 +28,7 @@ library
       Day1
       Day2
       Day3
+      Day4
   other-modules:
       Paths_hs_aoc2015
   autogen-modules:
@@ -37,8 +38,11 @@ library
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       base >=4.7 && <5
+    , bytestring
     , containers
+    , cryptohash-md5
     , parsec
+    , text
   default-language: Haskell2010
 
 executable aoc2015
@@ -52,9 +56,12 @@ executable aoc2015
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , bytestring
     , containers
+    , cryptohash-md5
     , hs-aoc2015
     , parsec
+    , text
   default-language: Haskell2010
 
 test-suite hs-aoc2015-test
@@ -69,7 +76,10 @@ test-suite hs-aoc2015-test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , bytestring
     , containers
+    , cryptohash-md5
     , hs-aoc2015
     , parsec
+    , text
   default-language: Haskell2010
