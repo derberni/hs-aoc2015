@@ -1,17 +1,9 @@
 module Day2 (day2part1, day2part2) where
 
-import Data.Char (digitToInt)
-import Text.Parsec (ParseError, Parsec, digit, endOfLine, many1, parse, string)
+import ParserUtil (decimal)
+import Text.Parsec (ParseError, endOfLine, parse, string)
 import Text.Parsec.Combinator (sepBy)
 import Text.Parsec.String (Parser)
-
-atoi :: [Char] -> Int
-atoi = foldl f 0
-  where
-    f s x = 10 * s + digitToInt x
-
-decimal :: Parsec String () Int
-decimal = atoi <$> many1 digit
 
 data Box = Box
   { width :: Int,

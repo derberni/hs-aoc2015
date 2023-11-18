@@ -5,6 +5,7 @@ import Day2 (day2part1, day2part2)
 import qualified Day3
 import qualified Day4
 import qualified Day5
+import qualified Day6
 import System.Environment (getArgs)
 
 dispatch :: [(String, String -> String)]
@@ -18,7 +19,9 @@ dispatch =
     ("day4part1", Day4.part1),
     ("day4part2", Day4.part2),
     ("day5part1", Day5.part1),
-    ("day5part2", Day5.part2)
+    ("day5part2", Day5.part2),
+    ("day6part1", Day6.part1),
+    ("day6part2", Day6.part2)
   ]
 
 main :: IO ()
